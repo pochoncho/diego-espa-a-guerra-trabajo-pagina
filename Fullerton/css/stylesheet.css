@@ -1,0 +1,1559 @@
+/* A continuación usamos @import url()  para llamar a la fuente que necesitaremos para el sitio */
+@import url("https://fonts.googleapis.com/css?family=Paytone+One|Roboto");
+
+/* Acá utilizamos los siguientes estilos:
+    - Margin: Nos sirve para modificar el margen del objeto
+    - Padding: Nos sirve para modificar el Padding, o el margen interior por decirlo así, del objeto
+    - Font Familiy: Nos sirve para modificar la fuente que utilizamos
+    - Background Color: Nos sirve para modificar el color del fondo
+    - Color: con este atributo modificamos el color de nuestro texto
+    - Float: Nos sirve para mover los elementos en el sitio y colocarlos hacia el lado que queramos
+    - Width: Con este modificamos el ancho de nuestro objeto */
+body {
+    margin: 0;
+    padding: 104px 0 0;
+    font-family: 'Roboto',sans-serif;
+    background-color: white;
+    color: #414141;
+    float: left;
+    width: 100%;
+}
+
+/*Acá utilizamos los siguientes estilos, obviando los ya dichos: 
+    - Position: Podemos configurar el tipo de movimiento que va a tener el objeto
+    - Top: La distancia que tenemos hacia arriba
+    - Left: La distancia que tenemos hacia la izquierda
+    - Z Index: Nos sirve para mover nuestro objeto
+    - Box Shadow: Para cambiar las sobras de nuestro objeto */
+.nav-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 16%);
+    background-color: white;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+/* Acá utilizamos los siguientes estilos, obviando los ya dichos:
+    - Font Size: Podemos modificar el tamaño de nuestra fuente
+    - Font Weight: Podemos modificar el tipo de fuente
+    - Display: El modo que tendrá nuestro objeto, flex, block, inline, etc. */
+.cities-login {
+    background-color: #F9C32D;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.cities {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+/* Acá utilizamos los siguientes estilos, obviando los ya dichos:
+    - Text Decoration: Lo usamos para modificar cómo se ve nuestro texto, en este caso lo utilizamos para sacarle el subrayado a un link */
+.cities a {
+    text-decoration: none;
+    color: #414141;
+}
+
+.login {
+    text-align: right;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+    padding-top: 10px;
+}
+
+.login a:first-of-type {
+    border-right: 2px solid #414141;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #414141;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #414141;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main-menu {
+    position: relative;
+    background: white;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.logo-menu {
+    width: 210px;
+    float: left;
+    text-decoration: none;
+    color: #414141;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+.logo-menu img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    aspect-ratio: auto 684 / 177;
+    color: #414141;
+}
+
+.menu-container {
+    width: calc(100%-290px);
+    text-align: right;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.lista-menu-principal {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    text-align: right;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 24px 0;
+    position: relative;
+    box-sizing: border-box;
+    list-style: none;
+    overflow-wrap: break-word;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #414141;
+}
+
+.lista-submenu1 {
+    position: absolute;
+    width: 180px;
+    background-color: white;
+    text-align: left;
+    z-index: 10;
+    border-radius: 0 0 10px 10px;
+    left: -10px;
+    top: 68px;
+    padding: 5px 0;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 16%);
+    opacity: 0;
+    visibility: hidden;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    list-style-type: circle;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    display: block;
+    list-style: none;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.lista-submenu1 li {
+    font-family: 'Paytone One',sans-serif;
+}
+
+.lista-menu-principal li {
+    font-family: 'Paytone One',sans-serif;
+}
+
+.lista-menu-principal::after {
+    content: "\f0d7";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: bold;
+}
+
+.submenu-item {
+    margin: 0;
+    padding: 5px 10px;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    text-align: -webkit-match-parent;
+    visibility: hidden;
+    overflow-wrap: break-word;
+    list-style-type: circle;
+    list-style: none;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.lista-submenu2 {
+    position: absolute;
+    width: 180px;
+    background-color: white;
+    text-align: left;
+    z-index: 10;
+    border-radius: 0 0 10px 10px;
+    left: -10px;
+    top: 68px;
+    padding: 5px 0;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 16%);
+    opacity: 0;
+    visibility: hidden;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    list-style-type: circle;
+    display: block;
+    list-style: none;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+#abrirMenu {
+    display: none;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    color: #414141;
+}
+
+#abrirBuscador {
+    position: absolute;
+    right: calc(5%+50px);
+    top: 50%;
+    margin-top: -10px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.fas {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    color: #414141;
+}
+
+.fa-search::before {
+    content: "\f002";
+}
+
+.section-destacados {
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+    text-align: center;
+    align-content: center;
+}
+
+.titulo-destacados {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    text-align: center;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Paytone One',sans-serif;
+    overflow-wrap: break-word;
+    display: block;
+}
+
+.productos-destacados {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ver-mas-destacados {
+    text-align: center;
+    box-sizing: border-box;
+    align-content: center;
+    background-color: #414141;
+    color: white;
+    display: block;
+    margin: 5px;
+    padding: 5px 20px 8px;
+    outline: none;
+    border: none;
+    font-family: 'Paytone One',sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    text-decoration: none;
+    width: 12%;
+}
+
+.nuestras-mascotas {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+}
+
+.producto1 h2 {
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    margin: 0;
+    font-family: 'Paytone One',sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+}
+
+.producto2 h2 {
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    margin: 0;
+    font-family: 'Paytone One',sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+}
+
+.producto3 h2 {
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    margin: 0;
+    font-family: 'Paytone One',sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+}
+
+.producto4 h2 {
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    margin: 0;
+    font-family: 'Paytone One',sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+}
+
+.producto1 h4 {
+    box-sizing: border-box;
+    color: #414141;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+}
+
+.producto2 h4 {
+    box-sizing: border-box;
+    color: #414141;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+}
+
+.producto3 h4 {
+    box-sizing: border-box;
+    color: #414141;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+}
+
+.producto4 h4 {
+    box-sizing: border-box;
+    color: #414141;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+}
+
+.producto1 p {
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+}
+
+.producto2 p {
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+}
+
+.producto3 p {
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+}
+
+.producto4 p {
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+}
+
+.producto1 a:last-of-type {
+    display: inline-block;
+    margin: 0!important;
+    padding: 5px 20px 8px;
+    outline: none;
+    font-family: 'Paytone One',sans-serif;
+    font-size: 1em;
+    border-radius: 100px;
+    background-color: #F9C32D;
+    color: white;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 16%);
+    line-height: normal;
+    position: relative;
+    overflow: visible;
+    font-weight: 700;
+    left: auto;
+    border: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    text-decoration: none;
+}
+
+.producto2 a:last-of-type {
+    display: inline-block;
+    margin: 0!important;
+    padding: 5px 20px 8px;
+    outline: none;
+    font-family: 'Paytone One',sans-serif;
+    font-size: 1em;
+    border-radius: 100px;
+    background-color: #F9C32D;
+    color: white;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 16%);
+    line-height: normal;
+    position: relative;
+    overflow: visible;
+    font-weight: 700;
+    left: auto;
+    border: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    text-decoration: none;
+}
+
+.producto3 a:last-of-type {
+    display: inline-block;
+    margin: 0!important;
+    padding: 5px 20px 8px;
+    outline: none;
+    font-family: 'Paytone One',sans-serif;
+    font-size: 1em;
+    border-radius: 100px;
+    background-color: #F9C32D;
+    color: white;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 16%);
+    line-height: normal;
+    position: relative;
+    overflow: visible;
+    font-weight: 700;
+    left: auto;
+    border: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    text-decoration: none;
+}
+
+.producto4 a:last-of-type {
+    display: inline-block;
+    margin: 0!important;
+    padding: 5px 20px 8px;
+    outline: none;
+    font-family: 'Paytone One',sans-serif;
+    font-size: 1em;
+    border-radius: 100px;
+    background-color: #F9C32D;
+    color: white;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 16%);
+    line-height: normal;
+    position: relative;
+    overflow: visible;
+    font-weight: 700;
+    left: auto;
+    border: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    text-decoration: none;
+}
+
+.nm-titulo {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    width: 100%;
+    font-family: 'Paytone One',sans-serif;
+    overflow-wrap: break-word;
+    display: block;
+    color: #414141;
+}
+
+.nm-circle {
+    width: 240px;
+    margin: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: #414141;
+    text-align: center;
+}
+
+.nm-circle h3 {
+    font-size: 24px;
+    margin: 10px 0 0;
+    display: block;
+    font-family: 'Paytone One',sans-serif;
+    overflow-wrap: break-word;
+}
+
+.section-premium {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 311.212px;
+    font-family: 'Paytone One',sans-serif;
+    font-size: 24px;
+    color: #414141;
+}
+
+.premium-card1 {
+    padding-top: 30px;
+    text-align: center;
+    background-color: #F9C32D;
+    width: 25%;
+}
+
+.premium-card2 {
+    padding-top: 30px;
+    background-color: #F6AC4D;
+    width: 25%;  
+}
+
+.premium-card3 {
+    padding-top: 30px;
+    background-color: #FD779B;
+    width: 25%;
+}
+
+.premium-card4 {
+    padding-top: 30px;
+    background-color: #4DB5F6;
+    width: 25%;
+}
+
+.btn-black {
+    border: 2px solid #414141;
+    margin: 5px;
+    padding: 5px 20px 8px;
+    display: inline-block;
+    outline: none;
+    border-radius: 100px;
+    color: #414141;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-black:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.btn-white {
+    border-radius: 100px;
+    border: 2px solid white;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 20px 8px;
+    outline: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-white:hover{
+    background-color: white;
+    color: #414141;
+}
+
+.section-marcas {
+    background-color: #f2f2f2;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.marcas-texto h2 {
+    font-size: 2.5em;
+    margin: 0 0 15px 0;
+    font-family: 'Paytone One',sans-serif;
+    overflow-wrap: break-word;
+    font-weight: normal;
+    display: block;
+}
+
+.marcas-texto {
+    display: flexbox;
+}
+
+.marcas-parrafo p {
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.marcas-button {
+    background-color: #F9C32D;
+    color: white;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 16%);
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 20px 8px;
+    outline: none;
+    border: none;
+    font-family: 'Paytone One',sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.marcas-parrafo {
+    width: 44%;
+}
+
+.marcas-imagenes {
+    width: 33.3333333333%;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;   
+}
+
+.marcas-cuadricula {
+    width: 120px;
+    height: 80px;
+    margin: 5px;
+    float: left;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 16%);
+    padding: 0;
+    position: relative;
+    background-color: white;
+}
+
+.marcas-cuadricula::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #414141;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.marcas-cuadricula a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-caracteristicas {
+    text-align: center;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+}
+
+.caracteristicas-titulo {
+    font-family: 'Paytone One',sans-serif;
+    color: #414141;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    display: block;
+}
+
+.width {
+    width: 100%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.section-videos {
+    background-color: #F9C32D;
+    margin-bottom: 50px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.video {
+    transform: translateY(-50px);
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.video video {
+    width: 95%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+.section-instagram {
+    padding-bottom: 50px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0 auto;
+    display: block;
+}
+
+.instagram-header {
+    padding: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    float: left;
+    clear: both;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.instagram-header-link {
+    text-decoration: none;
+    transition: color .5s ease;
+    box-shadow: none;
+    outline: 0;
+    color: #414141;
+    font-family: 'Paytone One',sans-serif;
+    float: left;
+    display: block;
+}
+
+.instagram-titulo {
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.instagram-titulo h3 {
+    float: left;
+    clear: both;
+    width: auto;
+    margin: 0 0 0 60px!important;
+    padding: 0!important;
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: 'Paytone One',sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    color: #414141;
+    padding-top: 9px!important;
+}
+
+.instagram-logo {
+    float: left;
+    position: relative;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 40px;
+    background: #333;
+    color: #fff;
+    height: 50px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.2;
+    opacity: 9;
+    transition: background .6s linear,color .6s linear;
+    margin: 0 0 0 -100%!important;
+}
+
+.instagram-logo-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.instagram-logo-svg::before {
+    content: "\f16d";
+}
+
+.instagram-body {
+    padding: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    float: left;
+    clear: both;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.ig-body {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    padding: inherit!important;
+    margin: 0!important;
+    text-decoration: none;
+    opacity: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    line-height: 0;
+    position: relative;
+}
+
+.ig-body a {
+    height: 283.663px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+    outline: 0;
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+.ig-body img {
+    width: 100%;
+    height: auto;
+    padding: 0!important;
+    margin: 0!important;
+    max-width: 100%!important;
+    opacity: 1!important;
+    box-sizing: border-box;
+}
+
+.instagram-footer {
+    opacity: 1;
+    transition: all .5s ease-in;
+    float: left;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+}
+
+.ig-load {
+    transition: all .1s ease-in;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    padding: 7px 14px;
+    margin: 5px auto 0 auto;
+    background: #333;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: 0;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
+
+.ig-follow {
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.ig-follow a {
+    transition: all .1s ease-in;
+    background: #408bd1;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    padding: 7px 14px;
+    margin: 5px auto 0 auto;
+    border: none;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: 0;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
+
+.ig-follow-svg {
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.125em;
+    margin-bottom: -1px;
+    margin-right: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
+
+.section-callcenter {
+    background-color: #F9C32D;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.callcenter-left {
+    background-color: #F6AC4D;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: right;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+}
+
+.callcenter-left h2 {
+    font-family: 'Paytone One',sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.callcenter-number {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #414141;
+    box-sizing: border-box;
+    font-family: 'Paytone One',sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    text-align: right;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    box-sizing: border-box;
+    color: #414141;
+    overflow-wrap: break-word;
+    font-size: 1.5em;
+    text-align: right;
+    text-decoration: none;
+}
+
+.callcenter-rigth {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+}
+
+.callcenter-rigth b {
+    float: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.section-mimascota {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.mimascota-head {
+    text-align: center;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+}
+
+.mimascota-titulo {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Paytone One',sans-serif;
+    overflow-wrap: break-word;
+    display: block;
+    text-align: center;
+    color: #414141;
+}
+
+.mimascota-body {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.mimascota-card {
+    width: calc(33.333333333% - 10px);
+    float: left;
+    margin: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 16%);
+    background-color: white;
+    position: relative;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.mimascota-cardimg {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    display: block;
+}
+
+.mimascota-cardcontent {
+    padding: 15px;
+    font-size: .9em;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.mimascota-cardcontent h2 {
+    margin: 0;
+    font-family: 'Paytone One',sans-serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #414141;
+}
+
+.mimascota-cardcontent a {
+    text-decoration: none;
+    color: #414141;
+}
+
+.mimascota-button {
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Paytone One',sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid #F9C32D;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #414141;
+    box-sizing: border-box;
+    font-size: .9em;
+}
+
+.section-refugios {
+    text-align: center;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.refugios-header {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.refugios-titulo {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Paytone One',sans-serif;
+    overflow-wrap: break-word;
+    display: block;
+    text-align: center;
+    color: #414141;
+}
+
+.refugios-body {
+    margin-top: 50px;
+    padding: 0 5%;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+    position: relative;
+    overflow: hidden;
+}
+
+.refugios-body a {
+    text-decoration: none;
+    color: #414141;
+}
+
+.refugio {
+    display: flex;
+    vertical-align: top;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.section-tiendas {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    color: #414141;
+}
+
+.tiendas-img img {
+    background-size: cover;
+    background-position: center;
+    width: 41.666666666%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+}
+
+.tiendas-body {
+    padding: 140px 5% 120px;
+    background-color: #F9C32D;
+    width: 58.3333333%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+}
+
+.tiendas-titulo {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Paytone One',sans-serif;
+    overflow-wrap: break-word;
+    display: block;
+}
+
+.tiendas-button {
+    font-family: 'Paytone Once',sans-serif;
+    font-size: 1em;
+    background-color: #414141;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 20px 8px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #3f3f3f;
+    color: white;
+}
+
+.footer-left {
+    width: 33.33333333%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+
+.footer-leftlist {
+    list-style: none;
+    padding: 0;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    color: white;
+}
+
+.list-footer1 {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: list-item;
+    list-style: none;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+.list-footer1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-footer2 {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: list-item;
+    list-style: none;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+.list-footer2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-footer3 {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: list-item;
+    list-style: none;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+.list-footer3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-footer4 {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: list-item;
+    list-style: none;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+.list-footer4 a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-center {
+    text-align: center;
+    width: 33.333333333%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    color: #F9C32D;
+}
+
+.footer-title {
+    font-size: 2em;
+    color: #F9C32D;
+    line-height: 44px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Paytone One',sans-serif;
+    overflow-wrap: break-word;
+    display: block;
+    text-align: center;
+}
+
+.footer-email {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 200px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.footer-button {
+    padding: 8px 15px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    outline: none;
+    border: none;
+    background-color: #F9C32D;
+    font-family: 'Paytone One',sans-serif;
+    transform: translate(-4px,1px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-rigth {
+    text-align: right;
+    width: 33.33333333%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+
+.footer-rigth img {
+    width: 100%;
+    max-width: 240px;
+    float: right;
+    clear: both;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.footer-contacto {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    text-align: right;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+
+.correo-contacto {
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: block;
+    text-align: right;
+    color: white;
+    text-decoration: none;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    box-sizing: border-box;
+    color: white;
+}
+
+.under-footer {
+    background-color: #252628;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-top: 10px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+}
+
+.f-rigth {
+    float: right;
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+}
+
+.f-rigth a {
+    text-decoration: none;
+    color: white;
+}

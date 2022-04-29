@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+    <!-- En la etiqueta head es dónde podemos colocar la información importante para nuestro sitio, como por ejemplo el idioma en el que
+    está, el title, linkear el archivo css para los estilos, etc. -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Fullerton | Alimentos para mascotas</title>
+        <!-- Archivo CSS del sitio -->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <!-- Favicon del sitio -->
+        <link rel="icon" type="images/x-icon" href="img/favicon.png">
+        <!-- Script para Font Awesome 5 Pro -->
+        <script src="https://kit.fontawesome.com/d1f93190c5.js" crossorigin="anonymous"></script>
+    </head>
+    <!-- Bajo la etiqueta body es dónde colocaremos la todo el cuerpo de nuestro sitio, las diferentes partes del mismo -->
+    <body>
+        <!-- Cada sección del sitio estará divido en DIV, NAV o SECTION, de esta forma podemos tener de forma más ordenada nuestro sitio
+        y además nos es mucho más fácil a la hora de darles los estilos en el arcivho CSS. -->
+        <nav class="nav-topbar">
+            <!-- cada etiqueta que queramos modificar estara con un nombre en especifico en la etiqueta class-->
+            <div class="cities-login">
+                <div class="cities>
+                    <!-- usamos etiquetas P y A para escribir texto-->
+                    <p>
+                        <a href="https://www.fullerton.cl/terminos-y-condiciones/">
+                            Conoce las ciudades con Despacho Gratis
+                        </a>
+                        |
+                        <strong>DESPACHAMOS A TODO CHILE</strong>
+                    </p>
+                </div>
+                <div class="login">
+                    <!-- Con la etiqueta A podemos añadir links a nuestro sitio -->
+                    <a href="https://www.fullerton.cl/mi-cuenta">Login</a>
+                    <a href="https://www.fullerton.cl/mi-cuenta">Crear cuenta</a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <!-- Acá usamos la etiqueta A y dentro la etiqueta IMG, de esta forma la imagen pasa a ser un link, que el usuario puede utilizar -->
+                <a href="https://www.fullerton.cl" class="logo-menu">
+                    <img src="img/cropped-logo-fullerton.png">
+                </a>
+                <!-- A continuación utilizaremos la etiqueta UL y la etiqueta LI para poder crear listas desordenadas, estas las utilizaremos
+                para poder crear nuestro menú en la parte superior -->
+                <div class="menu-container">
+                    <ul class="lista-menu-principal">
+                        <li class="objetomenu" id="lista1">
+                            <a href="https://www.fullerton.cl/categoria-producto/mascotas/">Mascotas</a>
+                            <!-- En este caso utilizamos la etiqueta UL dentro de un LI, de esta forma podemos crear una lista dentro de una
+                            lista, esto lo utilizaremos para poder crear un menú desplegable -->
+                            <ul class="listasubmenu1">
+                                <li class="sub-menu-item">
+                                    <a href="https://www.fullerton.cl/categoria-producto/perro/">Todo para su perro</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="https://www.fullerton.cl/categoria-producto/gato/">
+                                        Todo para su gato
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="https://www.fullerton.cl/categoria-producto/otras/">
+                                        Otras mascotas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://www.fullerton.cl/nuestras-marcas/">Nuestras marcas</a>
+                        </li>
+                        <li class="menu-item" id="lista2">
+                            <a href="https://www.fullerton.cl/categoria-producto/cocina-y-panaderia/">Cocina y panadería</a>
+                            <ul class="lista-submenu2">
+                                <li class="submenu2-item">
+                                    <a href="https://www.fullerton.cl/etiqueta-producto/harinas/">
+                                        Harinas
+                                    </a>
+                                </li>
+                                <li class="submenu2-item">
+                                    <a href="https://www.fullerton.cl/etiqueta-producto/fruto-secos/">
+                                        Fruto Secos
+                                    </a>
+                                </li>
+                                <li class="submenu2-item">
+                                    <a href="https://www.fullerton.cl/etiqueta-producto/legumbres/">
+                                        Legumbres
+                                    </a>
+                                </li>
+                                <li class="submenu2-item">
+                                    <a href="https://www.fullerton.cl/etiqueta-producto/pasteleria/">
+                                        Pastelería
+                                    </a>
+                                </li>
+                                <li class="submenu2-item">
+                                    <a href="https://www.fullerton.cl/etiqueta-producto/otros/">
+                                        Otros
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://www.fullerton.cl/categoria-producto/promociones/">
+                                Promociones
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://www.fullerton.cl/tiendas/">
+                                Tiendas
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href=""><img class="menu-img-search" src="img/search.png"></a>
+                <a href=""><img class="menu-img-cart" src="img/cart.png"></a>
+            </div>
+        </nav>
+        <main class="main-content">
+            <div class="section-slider">
+                <!-- AQUÍ VA EL SLIDER el cuál no hice xd -->
+            </div>
+            <!-- A continuación utilizaremos los DIV para crear este menu de productos destacados, al cual le daremos forma más tarde con CSS -->
+            <div class="section-destacados">
+                <h2 class="titulo-destacados">
+                    Productos Destacados
+                </h2>
+                <div class="productos-destacados">
+                    <div class="producto1">
+                        <a href="https://www.fullerton.cl/producto/evolve-dog-baked-chicken-4-98-kg/">
+                            <img src="img/birbo-gato-castrado.jpg">
+                        </a>
+                        <h2>BIRBO GATO CASTRADO X 15KG</h2>
+                        <h4>$33.100</h4>
+                        <p>73 en stock</p>
+                        <a href="">
+                            Añadir al carrito
+                        </a>
+                    </div>
+                    <div class="producto2">
+                        <a href="">
+                            <img src="img/NATURAL-EARTH-ADULTO2-300x300.jpg">
+                        </a>
+                        <h2>EVOLVE DOG BAKED CHICKEN 4.98 KG</h2>
+                        <h4>$28.500</h4>
+                        <p>3 en stock</p>
+                        <a href="">
+                            Añadir al carrito
+                        </a>
+                    </div>
+                    <div class="producto3">
+                        <a href="">
+                            <img src="img/OFERTA-ESPECIAL-Birbo-Perro-Cachorro-300x300.jpg">
+                        </a>
+                        <h2>BIRBO CACHORRO X 7 KG</h2>
+                        <h4>$12.500</h4>
+                        <p>163 en stock</p>
+                        <a href="">
+                            Añadir al carrito
+                        </a>
+                    </div>
+                    <div class="producto4">
+                        <a href="">
+                            <img src="img/BIRBO-PERRO-ADULTO-300x300.jpg">
+                        </a>
+                        <h2>BIRBO ADULTO X 25 KG</h2>
+                        <h4>$29.900</h4>
+                        <p>4431 en stock</p>
+                        <a href="">
+                            Añadir al carrito
+                        </a>
+                    </div>
+                </div>
+                <!-- Usamos la etiqueta a para poder colocar links -->
+                <a class="ver-mas-destacados" href="https://www.fullerton.cl/tienda">Ver todos</a>
+            </div>
+            <section class="nuestras-mascotas">
+                <h2 class="nm-titulo">Nuestras Mascotas</h2>
+                <p class="nm-parrafo">
+                    <strong>
+                        ¡ENCUENTRA TU PRODUCTO FAVORITO!
+                    </strong>
+                </p>
+                <!-- Utilizamos la etiqueta A y dentro la IMG y H3 para crear los circulos con los links -->
+                <a class="nm-circle" href="https://www.fullerton.cl/categoria-producto/perro/">
+                    <img src="img/perros.png">
+                    <h3 style="color: #4DB5F6;">Perros</h3>
+                </a>
+                <a class="nm-circle" href="https://www.fullerton.cl/categoria-producto/gato/">
+                    <img src="img/gatos.png">
+                    <h3 style="color: #F6AC4D;">Gatos</h3>
+                </a>
+                <a class="nm-circle" href="https://www.fullerton.cl/categoria-producto/otras/">
+                    <img src="img/conejo.png">
+                    <h3 style="color:#BC4DF6">Otras Mascotas</h3>
+                </a>
+            </section>
+            <!--Usaremos divs para poder crear la sección de los alimentos premiums-->
+            <section class="section-premium">
+                <div class="premium-card1">
+                    <img src="img/grain-free.svg">
+                    <h3>GRAIN FREE</h3>
+                    <p></p>
+                    <a class="btn-black" href="https://www.fullerton.cl/categoria-producto/perro/?pwb-brand-filter=evolve">Perros</a>
+                    <a class="btn-white" href="https://www.fullerton.cl/categoria-producto/gato/?pwb-brand-filter=evolve">Gatos</a>
+                </div>
+                <div class="premium-card2">
+                    <img src="img/super-premium.svg">
+                    <h3>SUPER PREMIUM</h3>
+                    <p></p>
+                    <a class="btn-black" href="https://www.fullerton.cl/categoria-producto/perro/?pwb-brand-filter=natural-earth">Perros</a>
+                    <a class="btn-white" href="https://www.fullerton.cl/brand/natural-earth/">Gatos</a>
+                </div>
+                <div class="premium-card3">
+                    <img src="img/high-premium.svg">
+                    <h3>HIGH PREMIUM</h3>
+                    <p></p>
+                    <a class="btn-black" href="https://www.fullerton.cl/categoria-producto/perro/?pwb-brand-filter=monello">Perros</a>
+                    <a class="btn-white" href="https://www.fullerton.cl/categoria-producto/gato/?pwb-brand-filter=monello">Gatos</a>
+                </div>
+                <div class="premium-card4">
+                    <img src="img/premium.svg">
+                    <h3>PREMIUM</h3>
+                    <p></p>
+                    <a class="btn-black" href="https://www.fullerton.cl/categoria-producto/perro/?pwb-brand-filter=birbo">Perros</a>
+                    <a class="btn-white" href="https://www.fullerton.cl/categoria-producto/gato/?pwb-brand-filter=birbo">Gatos</a>
+                </div>
+            </section>
+            <section class="section-marcas">
+                <div class="nuestras-marcas">
+                    <div class="marcas-texto">
+                        <!-- Utilizamos tanot las etiquetas H2 para colocar títulos-->
+                        <h2>Nuestras marcas</h2>
+                        <p></p>
+                        <p class="marcas-parrafo">
+                            Amamos a los animales y queremos entregar lo mejor
+                            para ellos.
+                        </p>
+                        <p class="marcas-parrafo">
+                            Hemos seleccionado cuidadosamente las marcas con 
+                            las que trabajamos para entregar productos de la 
+                            mejor calidad y accesibles a todos los bolsillos. 
+                            Los invitamos a descubrir el mundo de Fullerton, 
+                            seguirnos en redes sociales y conocer los 
+                            beneficios de todos nuestros alimentos.
+                        </p>
+                        <p></p>
+                        <a class="marcas-button" href="https://www.fullerton.cl/nuestras-marcas">
+                            Ver marcas
+                        </a>
+                    </div>
+                    <div class="marcas-imagenes">
+                        <div class="marcas-cuadricula">
+                            <a href="https://www.fullerton.cl/brand/birbo/"><img width="109" height="36" src="img/birbo.png"></a>
+                        </div>
+                        <div class="marcas-cuadricula">
+                            <a href="https://www.fullerton.cl/brand/champion-dog/"><img width="109" height="auto" src="img/champion-dog-150x77.png"></a>
+                        </div>
+                        <div class="marcas-cuadricula">
+                            <a href="https://www.fullerton.cl/brand/evolve/"><img width="109" height="auto" src="img/evolve-150x77.png"></a>
+                        </div>
+                        <div class="marcas-cuadricula">
+                            <a href="https://www.fullerton.cl/brand/master-dog/"><img width="109" height="auto" src="img/master-dog.png"></a>
+                        </div>
+                        <div class="marcas-cuadricula">
+                            <a href="https://www.fullerton.cl/brand/monello/"><img width="109" height="auto" src="img/monello-150x63.png"></a>
+                        </div>
+                        <div class="marcas-cuadricula">
+                            <a href="https://www.fullerton.cl/brand/natural-earth/"><img width="109" height="auto" src="img/natural-earth-150x97.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/gatito.png">
+            </section>
+            <section class="section-caracteristicas">
+                <h2 class="caracteristicas-titulo">
+                    Características de
+                    <!-- BR para realizar un salto de linea -->
+                    <br>
+                    Nuestras Marcas
+                </h2>
+                <p class="width"></p>
+                <p class="caracteristicas-parrafo">
+                    Nuestros 50 años de experiencia y continuidad en el 
+                    mercado como amantes N° 1 de las mascotas nos permiten 
+                    ofrecer marcas que brindan a tu mascota crecimiento 
+                    saludable, piel sana, pelaje brillante, reducción del 
+                    volumen de las heces, alta absorción de proteinas, tracto 
+                    urinario saludable, cuidado del corazón y visión; 
+                    ofreciendo productos con bajo contenido de sodio, sin 
+                    colorantes ni saborizantes artificiales, que aportan 
+                    vitaminas y minerales con una dieta equilibrada y 
+                    balanceada para brindar una mejor calidad de vida a tu 
+                    mascota.
+                </p>
+                <p></p>
+            </section>
+            <section class="section-videos">
+                <div class="video">
+                    <!-- usamos la etiqueta video para agregar un video-->
+                    <video src="img/MonelloCastrado_1.mp4" controls></video>
+                </div>
+                <div class="video">
+                    <video src="img/MonelloSenior_1.mp4" controls></video>
+                </div>
+            </section>
+            <section class="section-instagram">
+                <div class="instagram-header">
+                    <a class="instagram-header-link" href="https://www.instagram.com/fullertonchile/">
+                        <div class="instagram-titulo">
+                            <h3>fullertonchile</h3>
+                        </div>
+                        <div class="instagram-logo">
+                            <!-- Usamos la etiqueta SVG, que nos sirve para colocar logos-->
+                            <svg class="instagram-logo-svg" aria-hidden="true" data-fa-processed aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="instagram-body">
+                    <div class="ig-body" id="img1">
+                        <a href="https://www.instagram.com/p/CcdNz3KrWyu/"><img src="img/ig_body_1.png"></a>
+                    </div>
+                    <div class="ig-body" id="img2">
+                        <a href="https://www.instagram.com/p/CcYvIqiORmi/"><img src="img/ig_body_2.png"></a>
+                    </div>
+                    <div class="ig-body" id="img3">
+                        <a href="https://www.instagram.com/p/CcV6tu_JUIn/"><img src="img/ig_body_3.png"></a>
+                    </div>
+                    <div class="ig-body" id="img4">
+                        <a href="https://www.instagram.com/p/CcTOfCEJ5rx/"><img src="img/ig_body_4.png"></a>
+                    </div>
+                    <div class="ig-body" id="img5">
+                        <a href="https://www.instagram.com/p/CcQowPqJz5W/"><img src="img/ig_body_5.png"></a>
+                    </div>
+                    <div class="ig-body" id="img6">
+                        <a href="https://www.instagram.com/p/CcBrG5ipm6N/"><img src="img/ig_body_6.png"></a>
+                    </div>
+                    <div class="ig-body" id="img7">
+                        <a href="https://www.instagram.com/p/Cb_Ec1yOC6w/"><img src="img/ig_body_7.png"></a>
+                    </div>
+                    <div class="ig-body" id="img8">
+                        <a href="https://www.instagram.com/p/Cb8seSDL43w/"><img src="img/ig_body_8.png"></a>
+                    </div>
+                </div>
+                <div class="instagram-footer">
+                    <a class="ig-load" href="">
+                        <!-- SPAN es otra etiqueta para organizar el sitio-->
+                        <span class="ig-load-text">    
+                            Cargar más...
+                        </span>
+                    </a>
+                    <div class="ig-follow">
+                        <a href="https://www.instagram.com/fullertonchile/">
+                            <svg class="ig-follow-svg" aria-hidden="true" data-fa-processed aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                            </svg>
+                            <span>Seguir en Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-callcenter">
+                <div class="callcenter-left">
+                    <h2>
+                        ¡Llámanos!
+                        <a class="callcenter-number" href="">
+                            <!-- la etiqueta I nos sirve para escribir en modo italic-->
+                            <i class="fas fa-phone"></i>
+                            32 295 0457
+                        </a>
+                    </h2>
+                </div>
+                <div class="callcenter-rigth">
+                    <!-- La etiqueta B para colocar texto en BOLD -->
+                    <b>
+                        Horarios
+                        <br>
+                        Call Center:
+                    </b>
+                    <span>
+                        Lunes a viernes de 8:00 a 18:30 hrs.
+                        <br>
+                        Sabados de 8:00 a 13:00 hrs.
+                    </span>
+                </div>
+            </section>
+            <section class="section-mimascota">
+                <div class="mimascota-head">
+                    <h2 class="mimascota-titulo">
+                        Mi Mascota
+                    </h2>
+                    <p class="mimascota-parrafo">
+                        ¡Descubre cómo cuidar la alimentación y bienestar de
+                        tu mascota!
+                    </p>
+                </div>
+                <div class="mimascota-body">
+                    <div class="mimascota-card">
+                        <div class="mimascota-cardimg" style="background-image: url('img/alimentarmascotas.png');"></div>
+                        <div class="mimascota-cardcontent">
+                            <h2>
+                                <a href="https://www.fullerton.cl/como-alimentar-correctamente-a-las-mascotas/">
+                                    ¿Cómo alimentar correctamente a las mascotas?
+                                </a>
+                            </h2>
+                            <p>
+                                "Proporcionar una dieta con nutrientes
+                                esenciales durante cada ciclo de vida de una
+                                mascota puede garantizar la salud y el [...]"
+                            </p>
+                            <a class="mimascota-button" href="https://www.fullerton.cl/como-alimentar-correctamente-a-las-mascotas/">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="mimascota-card">
+                        <div class="mimascota-cardimg" style="background-image: url('img/perro3.png');"></div>
+                        <div class="mimascota-cardcontent">
+                            <h2>
+                                <a href="https://www.fullerton.cl/como-cambiar-su-alimento/">¿Cómo cambiar su alimento?</a>
+                            </h2>
+                            <p>
+                                Si vas a cambiar a alguna nueva marca, 
+                                realiza el cambio en lapso de 7 a 10 días, 
+                                mezclando de […]
+                            </p>
+                            <a class="mimascota-button" href="https://www.fullerton.cl/como-cambiar-su-alimento/">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="mimascota-card">
+                        <div class="mimascota-cardimg" style="background-image: url('img/adoptarmascotas.png');"></div>
+                        <div class="mimascota-cardcontent">
+                            <h2>
+                                <a href="https://www.fullerton.cl/tips-de-convivencia-de-las-mascotas/">¿Adoptar a una mascota las hará feliz de nuevo?</a>
+                            </h2>
+                            <p>
+                                ¿Te animarías a adoptar un perro o un gato?, 
+                                es importante concienciar y animar a la gente 
+                                a dar una […]
+                            </p>
+                            <a class="mimascota-button" href="https://www.fullerton.cl/tips-de-convivencia-de-las-mascotas/">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-refugios">
+                <div class="refugios-header">
+                    <h2 class="refugios-titulo">Refugios Amigos</h2>
+                    <p class="refugios-parrafo">
+                        Nuestro amor por los animales va más allá de solo 
+                        unas palabras, contamos con alianzas con diversas 
+                        organizaciones de ayuda a los animales e instamos 
+                        aportar con nuestro granito de arena para poder 
+                        mejorar la vida de cientos de mascotas.
+                    </p>
+                </div>
+                <div class="refugios-body">
+                    <div class="refugio">
+                        <a href="http://dhermes.cl/">
+                            <img src="img/dhermes.jpg">
+                            <br>
+                            Es una organización comunitaria de animales, sin 
+                            fines de lucro que opera en la ciudad de Viña del 
+                            Mar. Nuestra misión es educar a la ciudadanía en 
+                            castrar y esterilizar a sus mascotas y no 
+                            abandonarlas. Necesitamos de su apoyo, para 
+                            seguir adelante en esta noble causa.
+                        </a>
+                    </div>
+                    <div class="refugio">
+                        <a href="http://oppa.cl/">
+                            <img src="img/oppa.jpg">
+                            <br>
+                            Es una organización para La Protección Animal 
+                            (OPPA), sin fines de lucro, fundada en la ciudad 
+                            de Viña del Mar, Chile, en Octubre de 1994, con 
+                            el propósito de proteger a los animales y 
+                            defenderlos de abusos y maltrato; entregándoles 
+                            refugio, alimentación y medicamentos hasta que 
+                            alguna persona que desee cuidarlos y darles un 
+                            hogar, los adopte.
+                        </a>
+                    </div>
+                    <div class="refugio">
+                        <a href="https://www.facebook.com/soscallejeros.va/">
+                            <img src="img/sos.jpg">
+                            <br>
+                            Es una una organización sin fines de lucro 
+                            ubicada en Villa Alemana, dedicada al rescate y 
+                            recuperación de los animales en situación de 
+                            calle
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-tiendas">
+                <div class="tiendas-img"><img src="img/perro-correa.png"></div>
+                <div class="tiendas-body">
+                    <h2 class="tiendas-titulo">
+                        Visita Nuestras Tiendas
+                    </h2>
+                    <p></p>
+                    <p class="tiendas-parrafo">
+                        FULLERTON, es una empresa de origen familiar con 
+                        presencia en la V Región y la Región Metropolitana. 
+                        Nos destacamos por tener en las 12 sucursales un 
+                        equipo de personas altamente calificadas para brindar 
+                        un excelente servicio, dando asesoría en base a las 
+                        marcas que ofrecemos a nuestros clientes y por sobre 
+                        todo en nuestras salas de ventas encontrarás todo lo 
+                        que necesitas saber sobre la alimentación, cuidado de 
+                        tus mascotas ¡y mucho más!.
+                        <br>
+                        Hace tiempo que decidimos comenzar a importar y 
+                        distribuir marcas exclusivas de comida seca, húmeda, 
+                        snacks, arenas y mucho más, siempre con la mejor 
+                        calidad que únicamente podrás encontrarlas en nuestra 
+                        tienda online o sucursales. ¡Visítenos!
+                    </p>
+                    <p></p>
+                    <a class="tiendas-button" href="https://www.fullerton.cl/tiendas">
+                        Conocer Tiendas
+                    </a>
+                </div>
+            </section>
+        </main>
+        <!-- con la etiqueta footer podremos dividir el sitio-->
+        <footer class="footer-content">
+            <div class="footer-left">
+                <ul class="footer-left-list">
+                    <li class="list-footer1">
+                        <a href="https://www.fullerton.cl/blog/">Blog Fullerton</a>
+                    </li>
+                    <li class="list-footer2">
+                        <a href="https://www.fullerton.cl/contacto/">Contacto</a>
+                    </li>
+                    <li class="list-footer3">
+                        <a href="https://www.fullerton.cl/preguntas-frecuentes/">Preguntas frecuentes</a>
+                    </li>
+                    <li class="list-footer4">
+                        <a href="https://www.fullerton.cl/terminos-y-condiciones/">Términos y condiciones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-center">
+                <h3 class="footer-title">¡Suscríbete!</h3>
+                <p></p>
+                <!-- con el input podremos hacer que puedan ingresar su correo electronico -->
+                <input type="email" class="footer-email" placeholder="*Ingresa tu correo electrónico">
+                <!-- Y la etiqueta BUTTON, cómo su nombre indica, para crear un botón -->
+                <button class="footer-button">ENVIAR</button>
+            </div>
+            <div class="footer-rigth">
+                <img src="img/logo-blanco-fullerton.png">
+                <div class="footer-contacto">
+                    <p>
+                        <a class="correo-contacto" href="mailto:contacto@fullerton.cl">
+                            <i class="fas fa-envelope"></i>
+                            contacto@fullerton.cl
+                        </a>
+                    </p>
+                    <p>
+                        <strong>
+                            Call Center
+                        </strong>
+                    </p>
+                    <p>32 295 0457</p>
+                    <p>
+                        <strong>
+                            Horarios Call Center
+                        </strong>
+                    </p>
+                    <p>
+                        Lunes a viernes de 8:00 a 18:30 hrs.
+                        <br>
+                        Sábados de 8:00 a 13:00 hrs.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section class="under-footer">
+            <span>
+                © Fullerton 2022
+            </span>
+            <span class="f-rigth">
+                <img src="img/vitamina.svg">
+                Sitio desarrollado por
+                <a href="https://twitter.com/nachonoodles17">NachoNoodles</a>
+            </span>
+        </section>
+    </body>
+</html>
